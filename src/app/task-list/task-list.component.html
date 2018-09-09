@@ -2,7 +2,7 @@
 <input type="text" [(ngModel)]="task.value">
 <button type="button" (click) = "add()">ADICIONAR A LISTA</button>
 <ul>
-  <li *ngFor= "let item of tasks">
-    {{task.name}} - {{task.value}}
-  </li>
+  <li [id]="'lista-' + item.name" 
+  [style.color]="item.value >5 ?'blue':'red'"
+  *ngFor= "let item of tasks" [innerHTML] = "item.name + '-' + item.value"></li>
 </ul>
