@@ -7,3 +7,10 @@ ul li{
     padding: 5px;
     font-size: 25px;
 }
+
+.item-blue{
+    color: blue;
+}
+.item-red{
+    color:red;
+}
