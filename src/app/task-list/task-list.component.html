@@ -4,6 +4,6 @@
 <ul>
   <li [id]="'lista-' + item.name" 
   [ngClass] = "{'item-blue':item.value>=5, 'item-red': item.value < 5 }"
-  *ngFor= "let item of tasks" [innerHTML] = "item.name + '-' + item.value">
+  *ngFor= "let item of tasks" [innerHTML] = "item.name + ' - ' + (item.value | moeda)">
 </li>
 </ul>
